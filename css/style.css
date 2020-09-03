@@ -71,7 +71,6 @@ html, body {
   background: url("../images/banner02.jpg") no-repeat center/cover;
   padding: 0 0 11% 0;
   display: block;
-  margin-bottom: 130px;
 }
 
 .footer {
@@ -80,6 +79,7 @@ html, body {
   position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
   text-align: center;
   z-index: 6;
 }
@@ -94,6 +94,41 @@ html, body {
   .footer {
     height: 90px;
   }
+}
+
+.menu-tab {
+  display: flex;
+  margin-bottom: 70px;
+}
+
+.menu-tab li {
+  padding-right: 10px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.menu-tab li::after {
+  content: '';
+  width: 1px;
+  height: 100%;
+  transform: translate(0, -50%) rotate(30deg);
+  background-color: #4f4f4f;
+  top: 50%;
+  right: 0;
+  position: absolute;
+}
+
+.menu-tab li:last-child::after {
+  display: none;
+}
+
+.menu-tab li:last-child {
+  margin: 0;
+  padding: 0;
+}
+
+.menu-tab li a {
+  color: #4f4f4f;
 }
 
 /**
@@ -318,6 +353,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
   color: #4F4F4F;
 }
 
+.main-menu__link span.active {
+  color: #0A9F30;
+}
+
 .main-menu__link--01 {
   background: url("../images/menu-icons/01.svg") left no-repeat;
 }
@@ -338,13 +377,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
   margin: 0;
 }
 
-.main-menu__link a:hover {
-  text-decoration: underline;
-}
-
 .main-block {
   flex: 1 1 auto;
-  padding: 0 0 0 270px;
+  padding: 0 0 130px 270px;
   min-width: 0;
   background-color: #FAFAFA;
 }
@@ -636,6 +671,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
   background-color: #d6d6d6;
 }
 
+.main-news {
+  background-color: #FAFAFA;
+  padding: 60px 0 110px 270px;
+}
+
 @media (max-width: 1400px) {
   .block-news__column {
     flex: 0 1 50%;
@@ -645,5 +685,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 @media (max-width: 500px) {
   .block-news__column {
     flex: 0 1 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .main-news {
+    padding: 106px 0 200px 0;
   }
 }
