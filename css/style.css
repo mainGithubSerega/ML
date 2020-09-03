@@ -67,6 +67,35 @@ html, body {
   height: 100%;
 }
 
+.banner02 {
+  background: url("../images/banner02.jpg") no-repeat center/cover;
+  padding: 0 0 11% 0;
+  display: block;
+  margin-bottom: 130px;
+}
+
+.footer {
+  height: 140px;
+  background-color: #8c8c8c;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  z-index: 6;
+}
+
+.footer__text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+@media (max-width: 1700px) {
+  .footer {
+    height: 90px;
+  }
+}
+
 /**
  * Сброс стилей
  **/
@@ -130,14 +159,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 }
 
 .main-menu {
-  flex: 0 0 270px;
   height: 100%;
   position: fixed;
   padding: 45px 25px 0 30px;
   width: 270px;
   top: 0;
   left: 0;
-  z-index: 50;
+  z-index: 5;
   box-sizing: border-box;
 }
 
@@ -522,6 +550,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
     left: 15px;
     bottom: 10px;
   }
+}
+
+.block-news {
+  margin-bottom: 80px;
 }
 
 .block-news__body {
