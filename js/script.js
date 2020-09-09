@@ -52,3 +52,17 @@ function addClass(selList, selBurger, selBody){
 }
 addClass('.main-menu__fixed', '.main-menu__burger', 'body')
 ;
+function popupVideo (startBtn, popupSel) {
+    const btns = document.querySelectorAll(startBtn),
+          body = document.body,
+          popup = document.querySelector(popupSel)
+    
+    btns.forEach(item => {
+        item.addEventListener('click', function(e){
+            e.preventDefault()
+            body.classList.add('lock')
+            popup.classList.remove('hide')
+        })
+    })
+}
+popupVideo('.block-bets__column', '.video-popup');
