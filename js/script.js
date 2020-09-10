@@ -64,5 +64,11 @@ function popupVideo (startBtn, popupSel) {
             popup.classList.remove('hide')
         })
     })
+    popup.addEventListener('click', function(e){
+        if(e.target.classList.contains('video-popup')){
+            body.classList.remove('lock')
+            popup.classList.add('hide')
+        }
+    })
 }
 popupVideo('.block-bets__column', '.video-popup');
