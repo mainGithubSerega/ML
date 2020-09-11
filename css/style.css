@@ -321,12 +321,19 @@ html, body {
   display: none;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1024px) {
   .menu-tab--news li:last-child {
     display: none;
   }
   .menu-tab--news li:nth-child(2)::after {
     display: none;
+  }
+  .video-popup__content {
+    flex-direction: column;
+  }
+  .video-popup__iframe {
+    width: 640px;
+    height: 380px;
   }
 }
 
