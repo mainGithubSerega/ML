@@ -540,40 +540,69 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
   z-index: 2;
 }
 
-.main-menu__link {
-  padding: 0 0 0 40px;
-  line-height: 26px;
-  margin-bottom: 25px;
+.main-menu__menu li {
+  margin-bottom: 30px;
 }
 
-.main-menu__link span {
-  font-size: 15px;
+.main-menu__menu a {
+  display: flex;
+  align-items: center;
+}
+
+.main-menu__menu span {
   font-weight: 500;
-  color: #4F4F4F;
+  font-size: 15px;
+  color: #4f4f4f;
 }
 
-.main-menu__link span.active {
+.main-menu__menu span.active {
   color: #0A9F30;
 }
 
-.main-menu__link--01 {
-  background: url("../images/menu-icons/01.svg") left no-repeat;
+.main-menu__icon {
+  margin-right: 20px;
+  width: 20px;
+  stroke: #4f4f4f;
+  fill: none;
 }
 
-.main-menu__link--02 {
-  background: url("../images/menu-icons/02.svg") left no-repeat;
+.main-menu__icon01 {
+  height: 18px;
+  fill: #4f4f4f;
+  stroke: none;
 }
 
-.main-menu__link--03 {
-  background: url("../images/menu-icons/03.svg") left no-repeat;
+.main-menu__icon01--active {
+  stroke: #0A9F30;
+  fill: #0A9F30;
 }
 
-.main-menu__link--04 {
-  background: url("../images/menu-icons/04.svg") left no-repeat;
+.main-menu__icon02 {
+  height: 21px;
 }
 
-.main-menu__link:last-child {
-  margin: 0;
+.main-menu__icon02--active {
+  stroke: #0A9F30;
+}
+
+.main-menu__icon03 {
+  height: 14px;
+  fill: #4f4f4f;
+}
+
+.main-menu__icon03--active {
+  fill: #0A9F30;
+  stroke: #0A9F30;
+}
+
+.main-menu__icon04 {
+  height: 25.6px;
+  stroke: none;
+  fill: #4f4f4f;
+}
+
+.main-menu__icon04--active {
+  fill: #0A9F30;
 }
 
 .main-block {
