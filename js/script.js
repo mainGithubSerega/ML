@@ -58,10 +58,11 @@ function addClass(selList, selBurger, selBody){
 }
 addClass('.main-menu__fixed', '.main-menu__burger', 'body')
 ;
-function popupVideo (startBtn, popupSel) {
+function popupVideo (startBtn, popupSel, closeSel) {
     const btns = document.querySelectorAll(startBtn),
           body = document.body,
-          popup = document.querySelector(popupSel)
+          popup = document.querySelector(popupSel),
+          close = document.querySelector(closeSel)
     
     btns.forEach(item => {
         item.addEventListener('click', function(e){
@@ -76,5 +77,9 @@ function popupVideo (startBtn, popupSel) {
             popup.classList.add('hide')
         }
     })
+    close.addEventListener('click', function(){
+        body.classList.remove('lock')
+        popup.classList.add('hide')
+    })
 }
-popupVideo('.block-bets__column', '.video-popup');
+popupVideo('.block-bets__column', '.video-popup', '.video-popup__close');
