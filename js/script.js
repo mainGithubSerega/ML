@@ -16,7 +16,7 @@ $(document).ready(function(){
         autoplay:true  
     })
         $('.block-podcast__body').slick({
-        arrows:true,
+        arrows:false,
         dots:false,
         autoplay:true,
         slidesToShow:4,

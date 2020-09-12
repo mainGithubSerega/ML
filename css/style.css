@@ -573,6 +573,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 .main-menu__fixed {
   display: flex;
   flex-direction: column;
+  overflow: auto;
 }
 
 .main-menu__nav {
@@ -709,17 +710,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
   display: flex;
   margin: 0 -15px 38px;
   position: relative;
-}
-
-.block-podcast__body .slick-arrow {
-  position: absolute;
-  top: -72px;
-  z-index: 10;
-  right: 20px;
-}
-
-.block-podcast__body .slick-arrow.slick-prev {
-  background-color: red;
 }
 
 .block-podcast__column {
